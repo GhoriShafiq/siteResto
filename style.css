@@ -1,0 +1,337 @@
+@font-face {
+  font-family: font-1;
+  src: url("/Assets/fonts/Roboto-Light.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  font-family: font-1;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  z-index: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+/* header::-webkit-scrollbar {
+  background-color: antiquewhite;
+  height: 50px;
+} */
+.logo {
+  color: #fff;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-top: -10px;
+}
+span {
+  color: #fb911b;
+  font-size: 2rem;
+}
+.navbar {
+  display: flex;
+  position: relative;
+}
+.navbar a {
+  margin-left: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+
+.btnReservation {
+  padding: 10px 20px;
+  background: #fb911b;
+  margin-top: -10px;
+  text-transform: uppercase;
+  border-radius: 15px;
+}
+.btnReservation:hover {
+  background: #fb921bd0;
+  color: #fff;
+  transition: 0.7s ease-in-out;
+}
+header .navbar li:hover a {
+  border-bottom: 1px solid #fb911b;
+  color: #fb911b;
+  transition: 0.5s ease-in-out;
+}
+
+.scrolled {
+  background-color: #fff;
+  box-shadow: 1px 2px 0px black;
+}
+.scrolled .logo,
+.scrolled .navbar li a {
+  color: black;
+}
+.baniere {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./Assets/images/pageheader-banner.jpg) no-repeat center/cover;
+  color: #fff;
+}
+.contenu {
+  width: 70%;
+  max-width: 70%;
+}
+.baniere h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.baniere p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.contenu div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contenu a {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  height: 40px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  transition: 0.5s ease-in-out;
+}
+.btn1 {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  height: 40px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  transition: 0.5s ease-in-out;
+  background-color: #fb911b;
+  text-align: center;
+}
+.contenu .btn1 {
+  background-color: #fb911b;
+}
+.contenu .btn2 {
+  background-color: #2a4663;
+}
+.btn1:hover,
+.btn2:hover {
+  letter-spacing: 2px;
+}
+.btn1:hover {
+  background: #fb921bd0;
+  color: rgba(255, 255, 255, 0.623);
+}
+
+.btn2:hover {
+  background: #2352859b;
+  color: rgba(255, 255, 255, 0.623);
+}
+.apropos {
+  display: flex;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.apropos h2 {
+  margin: 10px;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.apropos .imgright {
+  width: 40%;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.imgright img {
+  width: 100%;
+  height: 100%;
+  object-fit: center/cover;
+  border-radius: 2%;
+}
+.apropos .textleft {
+  width: 60%;
+  padding: 10px;
+  text-align: justify;
+  text-overflow: "[..]";
+  /* text-overflow: hidden; */
+}
+
+/* .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}*/
+.textcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.textcenter h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.menu .contenuimg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.menu .contenuimg .box {
+  width: 40%;
+  margin: 10px;
+  border: 15px solid #fff;
+  box-shadow: 20px 10px 35px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.menu .contenuimg .box .texte {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.menu .contenuimg .box .imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: center/cover;
+  border-radius: 10px;
+}
+.menu .contenuimg .box .imgbox:hover img {
+  border-radius: 80px;
+  transform: scale(1.1);
+}
+.menu .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosexperts {
+  margin: 15px 0;
+}
+.imgexperts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 15px;
+  width: 100%;
+}
+.nosexperts .box {
+  width: 20%;
+  margin: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 15px solid #fff;
+  box-shadow: 20px 10px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.nosexperts .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: center/cover;
+  border-radius: 10px;
+}
+.nomexpert {
+  margin-top: 7px;
+}
+.nosexperts .box:hover img {
+  transform: rotate(10deg);
+  transform: scale3d(0.5);
+}
+.client {
+  background: linear-gradient(rgba(75, 75, 75, 0.4), rgba(10, 10, 10, 0.2)),
+    url(./Assets/images/hp-our-speciality-banner.jpg) no-repeat center/cover;
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 40px 15px 20px black;
+}
+.client .textcenter,
+.contact .textcenter {
+  color: #fff;
+  font-weight: 900;
+}
+.nomclient p,
+.nomclient h4,
+.contact p,
+.contact h4 {
+  text-align: center;
+  font-size: 1rem;
+  margin: 5px;
+}
+.nomclient h4 {
+  color: #fb911b;
+}
+.contact {
+  padding: 10px;
+}
+
+.client .imgexperts .box {
+  background-color: #fff;
+}
+.client .imgexperts .box img {
+  border-radius: 50%;
+  object-fit: center/cover;
+  width: 100%;
+  height: 100%;
+}
+.contact {
+  background: linear-gradient(rgba(32, 1, 1, 0.863), rgba(44, 41, 41, 0.075)),
+    url(./Assets/images/signature-dishes-banner-1024x483-min.jpg) no-repeat
+      center/cover;
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 10px 15px 10px black;
+  width: 100%;
+}
+.formcontact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  max-width: 400px;
+  align-items: center;
+
+  margin: 15px auto;
+}
+
+.fcontact input {
+  border: transparent;
+  border-bottom: 1px solid #fb911b;
+  outline: none;
+  margin: 5px;
+  width: 100%;
+}
+.fcontact textarea,
+.fcontact button {
+}
